@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Alumnos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Registro de Alumnos</h1>
+
+    <div id="mensaje" class="mensaje oculto"></div>
+
+    <form id="formAlumno">
+
+        <label class="label">ID del alumno</label>
+        <input type="text" id="idAlumno" disabled>
+
+        <label class="label">Nombre</label>
+        <input type="text" id="nombre" required>
+
+        <label class="label">Apellido</label>
+        <input type="text" id="apellido" required>
+
+        <label class="label">Edad</label>
+        <input type="number" id="edad" required>
+
+        <label class="label">Email</label>
+        <input type="email" id="email" required>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Alumnos registrados</h2>
+    <div id="listaAlumnos"></div>
+
+</div>
+
+<!-- MODAL -->
+<div id="modalConfirm" class="modal">
+    <div class="modal-contenido">
+        <p id="modalTexto"></p>
+        <div class="modal-botones">
+            <button id="btnCancelar">Cancelar</button>
+            <button id="btnConfirmar">Confirmar</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
